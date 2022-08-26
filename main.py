@@ -37,12 +37,9 @@ def my_form_post():
         label = 'This sentence is negative'    
     
     return(render_template('BK_SentimentAnalysis.html', variable=label))
+if __name__ == "__main__":    
+    app.run(port='8088', threaded=False, debug=True)
 
-    if __name__ == "__main__":    
-        app.run(port='8088', threaded=False, debug=True)
-
-
-# In[ ]:
 
 
 
